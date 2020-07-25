@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "mocha --compilers js:babel-register ./src/{*,**/*,**/**/*,**/**/**/*,**/**/**/**/*}.spec.js"
+    "test": "node scripts/test.js"
   },
   "author": "",
   "license": "ISC",
