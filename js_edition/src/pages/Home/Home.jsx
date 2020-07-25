@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <Style.MainWrapper>
-      <Header />
+      <Header events={membersAbsences} />
       <MainCalendar events={membersAbsences} />
     </Style.MainWrapper>
   );
