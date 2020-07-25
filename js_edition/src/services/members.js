@@ -4,7 +4,7 @@ import { members, absences } from "../api";
 function filterAbsencesByUserId(absences, userId) {
   let filteredAbsencesByUserId = [...absences];
   if (userId) {
-    filteredAbsencesByUserId = filteredAbsencesByUserId.filter(absence => absence.userId === userId);
+    filteredAbsencesByUserId = filteredAbsencesByUserId.filter(absence => absence.userId === parseInt(userId));
   }
   return filteredAbsencesByUserId;
 }
@@ -19,7 +19,7 @@ function filterAbsencesByDate(absences, startDate, endDate) {
     });
   }
   if (endDate) {
-    const end = moment(end);
+    const end = moment(endDate);
     filteredAbsencesByDate = filteredAbsencesByDate.filter((absence) => {
       const endAbsence = moment(absence.endDate);
       return endAbsence <= end;
