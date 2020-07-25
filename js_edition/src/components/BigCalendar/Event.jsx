@@ -6,7 +6,7 @@ export default function Event({ event }) {
   const Wrapper = event.type === "sickness" ? SicknessEvent : VacationEvent;
   return (
     <Wrapper>
-      <strong> {event.title}</strong>
+      <strong> {` ${event.title} - ${event.type} `}</strong>
     </Wrapper>
   );
 }
