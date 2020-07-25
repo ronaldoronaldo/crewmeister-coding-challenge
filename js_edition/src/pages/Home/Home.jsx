@@ -1,8 +1,13 @@
-import React from 'react'
-import * as Style from './Home.style'
+import React from "react";
 
+import useMembersAbsences from "../../hooks/useMembersAbsences";
+
+import * as Style from "./Home.style";
 
 export default function Home() {
-  return <Style.MainWrapper>Home</Style.MainWrapper>
-}
+  const { members } = useMembersAbsences();
 
+  console.log(members);
+
+  return <Style.MainWrapper>Home</Style.MainWrapper>;
+}
