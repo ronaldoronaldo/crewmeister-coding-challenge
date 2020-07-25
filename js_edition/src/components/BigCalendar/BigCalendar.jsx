@@ -1,5 +1,6 @@
 import React from "react";
 import { Calendar, momentLocalizer, Views } from "react-big-calendar";
+/* eslint-disable no-unused-vars */
 import CalendarStyle from "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from "moment";
 

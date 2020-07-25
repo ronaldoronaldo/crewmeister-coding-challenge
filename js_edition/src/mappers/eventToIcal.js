@@ -1,5 +1,3 @@
-import moment from "moment";
-
 export default function (event) {
   return {
     subject: event.title,
