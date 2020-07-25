@@ -1,8 +1,8 @@
 import moment from "moment";
 import absencesToEvents from "./absencesToEvents";
 
-describe("When converting event", () => {
-  it("should return a valid ical", () => {
+describe("When converting absences", () => {
+  it("should return a valid event", () => {
     const absences = [
       {
         member: {
