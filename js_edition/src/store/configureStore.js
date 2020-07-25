@@ -3,11 +3,11 @@ import thunk from 'redux-thunk'
 
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-import members from './members'
+import absences from './absences'
 
 function configureStore(preloadedState) {
   const rootReducer = combineReducers({
-    members,
+    absences,
   })
   
   const store = createStore(
