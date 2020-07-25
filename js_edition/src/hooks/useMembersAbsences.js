@@ -3,19 +3,18 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { updateMembersAbsences } from '../store/absences'
 
-
 import fetchMembersWithAbsences from '../services/members'
 
-export default function useMembersAbsences(startDate, endDate) {
+export default function useMembersAbsences(startDate, endDate, userId) {
   const dispatch = useDispatch()
   const { members } = useSelector(store => store.absences)
 
   useEffect(() => {
     ;(async () => {
-      const members = await fetchMembersWithAbsences(startDate, endDate)
+      const members = await fetchMembersWithAbsences(startDate, endDate, userId)
       await dispatch(updateMembersAbsences(members))
     })()
-  }, [dispatch, startDate, endDate])
+  }, [dispatch, startDate, endDate, userId])
 
   return {
     members
