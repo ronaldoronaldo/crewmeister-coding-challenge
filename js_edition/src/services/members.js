@@ -31,11 +31,11 @@ function filterAbsencesByDate(absences, startDate, endDate) {
 function joinMembersWithAbsences(absences, members) {
   return absences.map((absence) => ({
     ...absence,
-    user: members.find((member) => absence.userId === member.id),
+    member: members.find((member) => absence.userId === member.userId),
   }));
 }
 
-function getMembersAbsencesByDate(absences, members, startDate, endDate, userId) {
+function getMembersAbsences(absences, members, startDate, endDate, userId) {
   const filteredByUserId = filterAbsencesByUserId(absences, userId)
   const filteredAbsencesByDate = filterAbsencesByDate(
     filteredByUserId,
@@ -48,7 +48,7 @@ function getMembersAbsencesByDate(absences, members, startDate, endDate, userId)
 export default async function fetchMembersWithAbsences(startDate, endDate, userId) {
   const allMembers = await members();
   const allAbsences = await absences();
-  return getMembersAbsencesByDate(
+  return getMembersAbsences(
     allAbsences.payload,
     allMembers.payload,
     startDate,

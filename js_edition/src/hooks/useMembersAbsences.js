@@ -5,6 +5,8 @@ import { updateMembersAbsences } from '../store/absences'
 
 import fetchMembersWithAbsences from '../services/members'
 
+import absencesToEvents from '../mappers/absencesToEvents'
+
 export default function useMembersAbsences(startDate, endDate, userId) {
   const dispatch = useDispatch()
   const { membersAbsences } = useSelector(store => store.absences)
@@ -12,7 +14,8 @@ export default function useMembersAbsences(startDate, endDate, userId) {
   useEffect(() => {
     ;(async () => {
       const members = await fetchMembersWithAbsences(startDate, endDate, userId)
-      await dispatch(updateMembersAbsences(members))
+      const absencesEvents = absencesToEvents(members)
+      await dispatch(updateMembersAbsences(absencesEvents))
     })()
   }, [dispatch, startDate, endDate, userId])
 

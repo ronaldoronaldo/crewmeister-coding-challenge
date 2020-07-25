@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
@@ -6,6 +6,8 @@ export default createGlobalStyle`
     --secondary-text: #6b6b78;
     --white: #ffffff;
     --black: #000000;
+    --sickness: #EF6C00;
+    --vacation: #33B679;
   }
 
   body {
@@ -13,4 +15,4 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-`
+`;
