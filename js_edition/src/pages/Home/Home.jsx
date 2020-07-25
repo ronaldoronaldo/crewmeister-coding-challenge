@@ -5,9 +5,9 @@ import useMembersAbsences from "../../hooks/useMembersAbsences";
 import * as Style from "./Home.style";
 
 export default function Home() {
-  const { members } = useMembersAbsences(null, null, null);
+  const { membersAbsences } = useMembersAbsences(null, null, null);
 
-  console.log(members);
+  console.log(membersAbsences);
 
   return <Style.MainWrapper>Home</Style.MainWrapper>;
 }

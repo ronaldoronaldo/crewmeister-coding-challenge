@@ -1,7 +1,7 @@
 const UPDATE_MEMBERS_ABSENCES = 'absences/UPDATE_MEMBERS_ABSENCES'
 
 const INITIAL_VALUES = {
-  members: [],
+  membersAbsences: [],
 }
 
 export default function reducer(state = INITIAL_VALUES, action) {
@@ -9,16 +9,16 @@ export default function reducer(state = INITIAL_VALUES, action) {
     case UPDATE_MEMBERS_ABSENCES: 
       return {
         ...state,
-        members: action.members,
+        membersAbsences: action.membersAbsences,
       }
     default:
       return state
   }
 }
 
-export function updateMembersAbsences(members) {
+export function updateMembersAbsences(membersAbsences) {
   return {
     type: UPDATE_MEMBERS_ABSENCES,
-    members,
+    membersAbsences,
   }
 }

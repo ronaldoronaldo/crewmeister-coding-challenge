@@ -7,7 +7,7 @@ import fetchMembersWithAbsences from '../services/members'
 
 export default function useMembersAbsences(startDate, endDate, userId) {
   const dispatch = useDispatch()
-  const { members } = useSelector(store => store.absences)
+  const { membersAbsences } = useSelector(store => store.absences)
 
   useEffect(() => {
     ;(async () => {
@@ -17,6 +17,6 @@ export default function useMembersAbsences(startDate, endDate, userId) {
   }, [dispatch, startDate, endDate, userId])
 
   return {
-    members
+    membersAbsences
   }
 }
