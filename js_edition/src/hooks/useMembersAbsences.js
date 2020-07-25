@@ -15,7 +15,7 @@ export default function useMembersAbsences(startDate, endDate) {
       const members = await fetchMembersWithAbsences(startDate, endDate)
       await dispatch(updateMembersAbsences(members))
     })()
-  }, [startDate, endDate])
+  }, [dispatch, startDate, endDate])
 
   return {
     members
