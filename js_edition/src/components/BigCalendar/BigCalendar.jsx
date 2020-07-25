@@ -19,7 +19,7 @@ export default function BigCalendar({ events }) {
         startAccessor="start"
         endAccessor="end"
         defaultDate={new Date(2017, 0, 1)}
-        style={{ height: 500 }}
+        style={{ height: 600 }}
         components={{
           eventWrapper: Event,
         }}
