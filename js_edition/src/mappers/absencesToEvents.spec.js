@@ -8,6 +8,7 @@ describe("When converting absences", () => {
         member: {
           name: "Mike",
         },
+        userId: 1,
         type: "sickness",
         startDate: "2017-01-01",
         endDate: "2017-01-02",
@@ -16,6 +17,7 @@ describe("When converting absences", () => {
         member: {
           name: "tom",
         },
+        userId: 2,
         type: "vacation",
         startDate: "2017-02-01",
         endDate: "2017-02-12",
@@ -29,6 +31,7 @@ describe("When converting absences", () => {
         start: "2017-01-01T02:00:00.000Z",
         title: "Mike",
         type: "sickness",
+        userId: 1,
       },
       {
         allDay: true,
@@ -37,6 +40,7 @@ describe("When converting absences", () => {
         start: "2017-02-01T02:00:00.000Z",
         title: "tom",
         type: "vacation",
+        userId: 2,
       },
     ];
     const events = absencesToEvents(absences);
