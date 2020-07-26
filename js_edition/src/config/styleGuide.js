@@ -3,6 +3,8 @@ export const colors = {
   secondaryText: '#6b6b78',
   white: '#ffffff',
   black: '#000000',
+  lightGray: '#dddddd',
+
   sickness: '#EF6C00',
   vacation: '#33B679',
 };
