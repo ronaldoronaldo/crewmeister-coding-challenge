@@ -2,7 +2,7 @@
 
 This interface was created by me, Rafael Weiss, for to the Crewmeister coding challange. This app helps you manage the absences of your employees.
 
-##Setup
+#Setup
 
 You will need npm to run this application, I recommend an updated one since I used the version 10.21.0.
 
