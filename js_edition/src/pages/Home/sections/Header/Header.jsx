@@ -8,19 +8,25 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import AnimatedModal from "../../../../components/AnimatedModal";
 import NavButton from "../../../../components/NavButton/NavButton";
+import DatePicker from "../../../../components/DateRangePicker/DatePicker";
+import useRouter from "../../../../hooks/useRouter";
 
 export default function ({ events }) {
   const [datePickerIsOpen, setDatePickerIsOpen] = useState(false);
   const { downloadIcal } = useIcal();
-  const exportIcal = () => downloadIcal(events);
+  const { redirect } = useRouter();
 
-    return (
+  const handleDateRangeChange = range => {
+
+  }
+
+  return (
     <NavBar>
       <Logo src={logo}/>
       <Title>Absence Manager</Title>
       <ButtonsWrapper>
         <NavButton
-          onClick={exportIcal}
+          onClick={() => downloadIcal(events)}
           text={'Export Ical'}
           Icon={GetAppIcon}
         />
@@ -32,7 +38,11 @@ export default function ({ events }) {
       </ButtonsWrapper>
       <AnimatedModal
         closeModal={() => setDatePickerIsOpen(false)}
-        isOpen={datePickerIsOpen}/>
+        isOpen={datePickerIsOpen}>
+        <DatePicker
+          handleRangeChange={handleDateRangeChange}
+        />
+      </AnimatedModal>
     </NavBar>
   );
 }

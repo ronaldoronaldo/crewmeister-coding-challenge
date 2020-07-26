@@ -8,6 +8,10 @@ export const colors = {
   lightGray: '#dddddd',
   gray: '#cccccc',
 
+  datePickerGray: '#eff2f7' ,
+  calendarBlue: '#3d91ff',
+  calendarBlueDark: '#2b69bb',
+
   sickness: '#EF6C00',
   darkSickness: '#bb5501',
   vacation: '#33B679',

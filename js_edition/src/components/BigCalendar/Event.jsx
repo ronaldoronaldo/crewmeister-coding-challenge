@@ -1,9 +1,9 @@
 import React from "react";
 import { EventStyle } from "./Event.style.jsx";
-import useRedirect from "../../hooks/useRedirect";
+import useRouter from "../../hooks/useRouter";
 
 export default function Event({ event }) {
-  const { redirect } = useRedirect();
+  const { redirect } = useRouter();
 
   const showUserData = () => {
     redirect(`?userId=${event.userId}`)
