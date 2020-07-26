@@ -2,7 +2,7 @@
 
 This interface was created by me, Rafael Weiss, for to the Crewmeister coding challange. This app helps you manage the absences of your employees.
 
-#Setup
+## Prerequisites
 
 You will need npm to run this application, I recommend an updated one since I used the version 10.21.0.
 
@@ -13,6 +13,8 @@ If you don't have Node.js and npm installed:
 `sudo apt install nodejs`
 
 `sudo apt install npm`
+
+## Setup
 
 After installing Node.js and npm, go to the js_edition folder and run npm install: 
 
