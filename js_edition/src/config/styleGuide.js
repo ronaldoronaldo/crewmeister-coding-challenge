@@ -1,6 +1,5 @@
 export const colors = {
-  primaryText: '#001027',
-  secondaryText: '#6b6b78',
+  primaryText: '#36363b',
   black: '#000000',
   modalBackground: 'rgba(0,0,0,0.5)',
   white: '#ffffff',

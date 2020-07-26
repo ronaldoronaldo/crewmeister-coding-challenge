@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fontWeights, text, spacing, colors} from "../../../../config/styleGuide";
+import {fontWeights, text, spacing, colors, screens} from "../../../../config/styleGuide";
 
 export const NavBar = styled.div`
   display: flex;
@@ -13,13 +13,19 @@ export const NavBar = styled.div`
 export const Logo = styled.img`
   width: 64px;
   height: 64px;
-  margin-left: ${spacing.xLarge};
+  margin-left: ${spacing.medium};
+  @media (min-width: ${screens.medium}) {
+    margin-left: ${spacing.xLarge};
+  }
 `
 
 export const Title = styled.span`
-  font-size: ${text.h[3]};
+  font-size: 0;
   font-weight: ${fontWeights.bold};
   color: ${colors.primaryText};
+  @media (min-width: ${screens.medium}) {
+     font-size: ${text.h[5].size};
+  }
 `
 
 export const ButtonsWrapper = styled.div`
