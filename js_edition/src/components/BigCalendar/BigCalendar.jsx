@@ -5,14 +5,14 @@ import CalendarStyle from "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from "moment";
 
 import Event from "./Event";
-import * as Style from "./BigCalendar.style";
+import {CalendarWrapper} from "./BigCalendar.style";
 
 const allViews = Object.keys(Views).map((k) => Views[k]);
 
 export default function BigCalendar({ events }) {
   const localizer = momentLocalizer(moment);
   return (
-    <Style.CalendarWrapper>
+    <CalendarWrapper>
       <Calendar
         localizer={localizer}
         events={events}
@@ -25,6 +25,6 @@ export default function BigCalendar({ events }) {
           eventWrapper: Event,
         }}
       />
-    </Style.CalendarWrapper>
+    </CalendarWrapper>
   );
 }
