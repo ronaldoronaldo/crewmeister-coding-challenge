@@ -10,5 +10,6 @@ export const EventStyle = styled.div`
     color: ${colors.white};
     font-size: ${text.paragraph};
     margin-right: ${spacing.small};
+    cursor: pointer;
   `};
 `;
