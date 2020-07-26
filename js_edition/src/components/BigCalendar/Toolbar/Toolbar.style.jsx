@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {screens, spacing, text} from "../../../styles/styleGuide";
+import {colors, screens, spacing, text} from "../../../styles/styleGuide";
 import {ButtonStyle} from "../../../styles/commun";
 
 export const ButtonsWrapper = styled.div`
@@ -31,6 +31,7 @@ export const ToolbarButton = styled(ButtonStyle)``;
 
 export const Title = styled.span`
   font-size: ${text.bodySmall};
+  color: ${colors.primaryText};
   @media (min-width: ${screens.small}) {
     font-size: ${text.middleText};
   }
