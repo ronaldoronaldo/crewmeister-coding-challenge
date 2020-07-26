@@ -1,7 +1,6 @@
 import React from "react";
-import { EventStyle } from "./Event.style.jsx";
-import useRouter from "../../hooks/useRouter";
-import {EventText, EventType} from "./Event.style";
+import useRouter from "../../../hooks/useRouter";
+import {EventStyle, EventText, EventType} from "./Event.style";
 
 export default function Event({ event }) {
   const { redirect } = useRouter();

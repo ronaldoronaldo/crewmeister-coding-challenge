@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import moment from "moment";
 
-import Event from "../BigCalendar/Event";
+import Toolbar from "./Event";
 
 describe("<Event />", () => {
   it("should match snapshot when is sickness", () => {
@@ -14,7 +14,7 @@ describe("<Event />", () => {
       start: moment("2017-01-01"),
       end: moment("2017-01-01"),
     };
-    const { container } = render(<Event event={event} />);
+    const { container } = render(<Toolbar event={event} />);
     expect(container).toMatchSnapshot();
   });
   it("should match snapshot when is on vacation", () => {
@@ -26,7 +26,7 @@ describe("<Event />", () => {
       start: moment("2017-01-02"),
       end: moment("2017-01-04"),
     };
-    const { container } = render(<Event event={event} />);
+    const { container } = render(<Toolbar event={event} />);
     expect(container).toMatchSnapshot();
   });
 });
