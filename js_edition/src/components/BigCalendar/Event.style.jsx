@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors, fontWeights, radius, spacing, text} from "../../config/styleGuide";
+import {colors, fontWeights, radius, spacing, text, transitions} from "../../config/styleGuide";
 
 export const EventStyle = styled.div`
   ${({ isSickness }) => `
@@ -11,6 +11,7 @@ export const EventStyle = styled.div`
     font-size: ${text.paragraph};
     margin-right: ${spacing.small};
     cursor: pointer;
+    transition: ${transitions.buttonBackground};
     &:hover {
       background-color: ${isSickness ? colors.darkSickness : colors.darkVacation};
     }

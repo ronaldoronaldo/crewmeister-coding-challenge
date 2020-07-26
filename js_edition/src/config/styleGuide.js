@@ -67,4 +67,8 @@ export const shadows = {
   shadowDown8: '0 8px 10px 1px rgba(0, 0, 0, 0.06)'
 };
 
+export const transitions = {
+  buttonBackground: 'background-color 0.1s ease-in-out',
+};
+
 export const radius = '5px';

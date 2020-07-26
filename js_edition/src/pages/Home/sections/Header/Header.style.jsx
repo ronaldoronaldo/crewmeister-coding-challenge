@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fontWeights, text, spacing, colors, radius, button} from "../../../../config/styleGuide";
+import {fontWeights, text, spacing, colors, radius, button, transitions} from "../../../../config/styleGuide";
 
 export const NavBar = styled.div`
   display: flex;
@@ -44,6 +44,7 @@ export const NavButton = styled.button`
   padding: 0 ${spacing.medium};
   justify-content: center;
   cursor: pointer;
+  transition: ${transitions.buttonBackground};
   &:hover {
     background-color: ${colors.darkWhite};
   }
