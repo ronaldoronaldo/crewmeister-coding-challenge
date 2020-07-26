@@ -5,15 +5,15 @@ import useClickOutside from "../../hooks/useClickOutside";
 
 export default function AnimatedModal({isOpen, closeModal}) {
   const [dateRange, setDateRange] = useState({
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: new Date(2017, 0, 1),
+    endDate: new Date(2017, 0, 1),
     key: 'selection',
   });
   const wrapperRef = useRef(null);
   useClickOutside(wrapperRef, closeModal);
 
   const handleSelect = (ranges) => {
-    console.log(isOpen);
+    console.log(ranges);
     setDateRange(ranges.selection);
   };
 

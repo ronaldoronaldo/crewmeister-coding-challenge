@@ -12,8 +12,6 @@ import NavButton from "../../../../components/NavButton/NavButton";
 export default function ({ events }) {
   const [datePickerIsOpen, setDatePickerIsOpen] = useState(false);
   const { downloadIcal } = useIcal();
-  const openModal = () => setDatePickerIsOpen(true);
-  const closeModal = () => setDatePickerIsOpen(false);
   const exportIcal = () => downloadIcal(events);
 
     return (
@@ -27,13 +25,13 @@ export default function ({ events }) {
           Icon={GetAppIcon}
         />
         <NavButton
-          onClick={openModal}
+          onClick={() => setDatePickerIsOpen(true)}
           text={'Change date range'}
           Icon={DateRangeIcon}
         />
       </ButtonsWrapper>
       <AnimatedModal
-        closeModal={closeModal}
+        closeModal={() => setDatePickerIsOpen(false)}
         isOpen={datePickerIsOpen}/>
     </NavBar>
   );
