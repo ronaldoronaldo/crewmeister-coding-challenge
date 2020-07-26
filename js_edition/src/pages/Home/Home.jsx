@@ -1,11 +1,9 @@
 import React from "react";
-
 import useMembersAbsences from "../../hooks/useMembersAbsences";
 import useQueryString from "../../hooks/useQueryString";
-
 import Header from "./sections/Header";
 import MainCalendar from "./sections/MainCalendar";
-import * as Style from "./Home.style";
+import { MainWrapper } from "./Home.style";
 
 export default function Home() {
   let queryString = useQueryString();
@@ -17,9 +15,9 @@ export default function Home() {
   );
 
   return (
-    <Style.MainWrapper>
+    <MainWrapper>
       <Header events={membersAbsences} />
       <MainCalendar events={membersAbsences} />
-    </Style.MainWrapper>
+    </MainWrapper>
   );
 }

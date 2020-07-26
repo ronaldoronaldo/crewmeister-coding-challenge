@@ -1,12 +1,10 @@
 import React from "react";
-
-import { SicknessEvent, VacationEvent } from "./Event.style.jsx";
+import { EventStyle } from "./Event.style.jsx";
 
 export default function Event({ event }) {
-  const Wrapper = event.type === "sickness" ? SicknessEvent : VacationEvent;
   return (
-    <Wrapper>
-      <strong> {` ${event.title} - ${event.type} `}</strong>
-    </Wrapper>
+    <EventStyle isSickness={event.type === "sickness"}>
+      {` ${event.title} - ${event.type} `}
+    </EventStyle>
   );
 }
