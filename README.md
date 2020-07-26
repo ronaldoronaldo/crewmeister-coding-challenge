@@ -53,3 +53,15 @@ To run the tests use npm test:
 - Simulating requests from the mocked API.
 - Data from API stored with Redux.
 - Tests.
+
+# Useful Links
+- [Node.js](https://nodejs.org/)
+- [React](https://reactjs.org/)
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Material.ui](https://material-ui.com/)
+- [Redux](https://redux.js.org/)
+- [React big calendar](https://github.com/jquense/react-big-calendar)
+- [Adphorus - React date range picker](https://github.com/Adphorus/react-date-range)
+- [Moment.js](https://momentjs.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
