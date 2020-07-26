@@ -6,7 +6,7 @@ export const ButtonText = styled.span`
   margin-right: ${spacing.small};
   color: ${colors.primaryText};
   display: none;
-  @media (min-width: ${screens.small}) {
+  @media (min-width: ${screens.medium}) {
     display: flex;
   }
 `
@@ -28,7 +28,7 @@ export const NavButtonStyle = styled.button`
     background-color: ${colors.darkWhite};
   }
   
-  @media (min-width: ${screens.small}) {
+  @media (min-width: ${screens.medium}) {
     border: 1px solid ${colors.gray};
     padding: 0 ${spacing.medium};
     margin-right: ${spacing.xLarge};
