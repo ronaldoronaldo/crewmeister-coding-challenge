@@ -1,16 +1,17 @@
 import styled from 'styled-components'
-import {button, colors, fontWeights, radius, spacing, transitions} from "../../config/styleGuide";
+import {button, colors, radius, spacing, transitions} from "../../config/styleGuide";
 
-export const ApplyButton = styled.button`
+export const DatePickerButton = styled.button`
   display: flex;
   align-items: center;
+  margin-left: ${spacing.medium};
   background-color:  ${colors.calendarBlue};
   border-radius: ${radius};
   color: ${colors.white};
   border: 1px solid ${colors.calendarBlue};
   height: ${button.small};
   width: auto;
-  padding: 0 ${spacing.small};
+  padding: 0 ${spacing.medium};
   justify-content: center;
   cursor: pointer;
   transition: ${transitions.buttonBackground};

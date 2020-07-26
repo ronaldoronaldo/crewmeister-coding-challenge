@@ -14,11 +14,16 @@ import useRouter from "../../../../hooks/useRouter";
 export default function ({ events }) {
   const [datePickerIsOpen, setDatePickerIsOpen] = useState(false);
   const { downloadIcal } = useIcal();
-  const { redirectWithDateRange } = useRouter();
+  const { redirectWithDateRange, redirect } = useRouter();
 
   const handleRangeChange = range => {
     setDatePickerIsOpen(false)
     redirectWithDateRange(range)
+  }
+
+  const resetDateRange = range => {
+    setDatePickerIsOpen(false)
+    redirect('/')
   }
 
   return (
@@ -42,6 +47,7 @@ export default function ({ events }) {
         isOpen={datePickerIsOpen}>
         <DatePicker
           handleRangeChange={handleRangeChange}
+          resetDateRange={resetDateRange}
         />
       </AnimatedModal>
     </NavBar>
