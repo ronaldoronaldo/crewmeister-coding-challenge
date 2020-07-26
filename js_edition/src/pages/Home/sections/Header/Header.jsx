@@ -8,7 +8,7 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import AnimatedModal from "../../../../components/AnimatedModal";
 import NavButton from "../../../../components/NavButton/NavButton";
-import DatePicker from "../../../../components/DateRangePicker/DatePicker";
+import DatePicker from "../../../../components/DatePicker/DatePicker";
 import useRouter from "../../../../hooks/useRouter";
 
 export default function ({ events }) {
