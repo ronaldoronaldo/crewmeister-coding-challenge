@@ -1,5 +1,6 @@
 import styled from "styled-components";
+import {spacing} from "../../../../config/styleGuide";
 
 export const MainCalendarWrapper = styled.section`
-  padding: 20px 50px;
+  padding: ${spacing.large} ${spacing.xLarge};
 `;

@@ -4,6 +4,7 @@ export const colors = {
   white: '#ffffff',
   black: '#000000',
   lightGray: '#dddddd',
+  gray: '#cccccc',
 
   sickness: '#EF6C00',
   vacation: '#33B679',
