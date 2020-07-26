@@ -14,5 +14,4 @@ export const NavButtonStyle = styled(ButtonStyle)`
   @media (min-width: ${screens.medium}) {
     margin-right: ${spacing.xLarge};
   }
-
 `

@@ -21,7 +21,7 @@ export default function ({ events }) {
     redirectWithDateRange(range)
   }
 
-  const resetDateRange = () => {
+  const handleResetDateRange = () => {
     setDatePickerIsOpen(false)
     redirect('/')
   }
@@ -49,7 +49,7 @@ export default function ({ events }) {
         isOpen={datePickerIsOpen}>
         <DatePicker
           handleRangeChange={handleRangeChange}
-          resetDateRange={resetDateRange}
+          resetDateRange={handleResetDateRange}
         />
       </AnimatedModal>
     </NavBar>
