@@ -5,6 +5,7 @@ import Event from "./Event/Event";
 import {CalendarWrapper} from "./BigCalendar.style";
 /* eslint-disable no-unused-vars */
 import CalendarStyle from "react-big-calendar/lib/css/react-big-calendar.css";
+import Toolbar from "./Toolbar/Toolbar";
 
 const allViews = Object.keys(Views).map((k) => Views[k]);
 
@@ -22,7 +23,7 @@ export default function BigCalendar({ events }) {
         style={{ height: 600 }}
         components={{
           eventWrapper: Event,
-          toolbar: ''
+          toolbar: Toolbar
         }}
       />
     </CalendarWrapper>
