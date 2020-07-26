@@ -8,11 +8,23 @@ You will need npm to run this application, I recommend an updated one since I us
 
 If you don't have Node.js and npm installed:
 
+### Ubuntu:
+
 `sudo apt update`
 
 `sudo apt install nodejs`
 
 `sudo apt install npm`
+
+### Mac:
+
+`brew update`
+
+`brew install nodes`
+
+### Windows:
+
+Follow the instructions in [phoenixnap.com/kb/install-node-js-npm-on-windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 
 ## Setup
 
