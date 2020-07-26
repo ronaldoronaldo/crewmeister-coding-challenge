@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavButton /> should match snapshot 1`] = `
+<div>
+  <button
+    class="sc-AxirZ sc-AxhCb kYuvxj"
+  >
+    <span
+      class="sc-AxjAm sc-AxiKw QVUtw"
+    >
+      myBtn
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+      />
+    </svg>
+  </button>
+</div>
+`;

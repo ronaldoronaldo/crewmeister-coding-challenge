@@ -1,5 +1,5 @@
 import React from "react";
-import {NavButtonStyle, ButtonTextStyle} from "./NavButton.style";
+import { NavButtonStyle, ButtonTextStyle } from "./NavButton.style";
 
 export default function NavButton ({ onClick, text, Icon }) {
   return (
@@ -8,7 +8,7 @@ export default function NavButton ({ onClick, text, Icon }) {
       <ButtonTextStyle>
         {text}
       </ButtonTextStyle>
-      <Icon/>
+      <Icon />
     </NavButtonStyle>
   )
 }
