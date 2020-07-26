@@ -25,6 +25,7 @@ export const fontWeights = {
 
 export const text = {
   paragraph: '16px',
+  middleText: '14px',
   bodySmall: '12px',
   h: {
     1: {size: '48.8px', lineHeight: '70px'},

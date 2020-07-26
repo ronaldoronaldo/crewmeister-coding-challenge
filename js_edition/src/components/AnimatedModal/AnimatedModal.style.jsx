@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {colors, radius} from "../../config/styleGuide";
+import {colors, radius} from "../../styles/styleGuide";
 
 export const Container = styled.div`
   ${({ isOpen }) => `

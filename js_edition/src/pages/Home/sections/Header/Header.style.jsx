@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {fontWeights, text, spacing, colors, screens} from "../../../../config/styleGuide";
+import {fontWeights, text, spacing, colors, screens} from "../../../../styles/styleGuide";
 
 export const NavBar = styled.div`
   display: flex;

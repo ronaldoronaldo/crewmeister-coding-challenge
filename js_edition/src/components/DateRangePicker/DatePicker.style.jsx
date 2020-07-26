@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {button, colors, radius, spacing, transitions} from "../../config/styleGuide";
+import {button, colors, radius, spacing, transitions} from "../../styles/styleGuide";
 
 export const DatePickerButton = styled.button`
   display: flex;

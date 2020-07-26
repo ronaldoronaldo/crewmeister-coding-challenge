@@ -1,13 +1,13 @@
 import React from "react";
-import {NavButtonStyle, ButtonText} from "./NavButton.style";
+import {NavButtonStyle, ButtonTextStyle} from "./NavButton.style";
 
 export default function NavButton ({ onClick, text, Icon }) {
   return (
     <NavButtonStyle
       onClick={onClick}>
-      <ButtonText>
+      <ButtonTextStyle>
         {text}
-      </ButtonText>
+      </ButtonTextStyle>
       <Icon/>
     </NavButtonStyle>
   )
