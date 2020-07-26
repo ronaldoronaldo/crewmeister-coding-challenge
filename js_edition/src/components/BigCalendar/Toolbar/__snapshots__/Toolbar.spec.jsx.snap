@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Event /> should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-AxhCb kCcHTH"
+  >
+    <div
+      class="sc-AxiKw emcivl"
+    >
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Today
+      </button>
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Back
+      </button>
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Next
+      </button>
+    </div>
+    <span
+      class="sc-AxgMl gCVfLD"
+    >
+      <b>
+        July
+      </b>
+       
+      2020
+    </span>
+    <div
+      class="sc-AxiKw emcivl"
+    >
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Day
+      </button>
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Week
+      </button>
+      <button
+        class="sc-AxirZ sc-AxhUy dTzrWs"
+      >
+        Month
+      </button>
+    </div>
+  </div>
+</div>
+`;
