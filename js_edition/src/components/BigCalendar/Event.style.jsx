@@ -11,5 +11,8 @@ export const EventStyle = styled.div`
     font-size: ${text.paragraph};
     margin-right: ${spacing.small};
     cursor: pointer;
+    &:hover {
+      background-color: ${isSickness ? colors.darkSickness : colors.darkVacation};
+    }
   `};
 `;

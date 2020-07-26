@@ -8,9 +8,9 @@ export const colors = {
   gray: '#cccccc',
 
   sickness: '#EF6C00',
-  darkSickness: '#EF6C00',
+  darkSickness: '#bb5501',
   vacation: '#33B679',
-  darkVacation: '#33B679',
+  darkVacation: '#238457',
 };
 
 export const fontWeights = {
