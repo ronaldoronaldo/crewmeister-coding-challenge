@@ -1,27 +1,32 @@
-import React, {useState} from "react";
-import {Background, Modal} from "./AnimatedModal.style";
+import React, {useRef, useState} from "react";
+import {Background, Container, Modal} from "./AnimatedModal.style";
 import {DateRangePicker} from "react-date-range";
+import useClickOutside from "../../hooks/useClickOutside";
 
-export default function AnimatedModal({isOpen}) {
+export default function AnimatedModal({isOpen, closeModal}) {
   const [dateRange, setDateRange] = useState({
     startDate: new Date(),
     endDate: new Date(),
     key: 'selection',
   });
+  const wrapperRef = useRef(null);
+  useClickOutside(wrapperRef, closeModal);
 
   const handleSelect = (ranges) => {
-    console.log(ranges);
+    console.log(isOpen);
     setDateRange(ranges.selection);
   };
 
   return (
-    <Background isOpen={isOpen}>
-      <Modal isOpen={isOpen}>
-        <DateRangePicker
-          ranges={[dateRange]}
-          onChange={handleSelect}
-        />
-      </Modal>
-    </Background>
+    <Container isOpen={isOpen}>
+      <Background isOpen={isOpen}>
+        <Modal ref={wrapperRef} isOpen={isOpen}>
+          <DateRangePicker
+            ranges={[dateRange]}
+            onChange={handleSelect}
+          />
+        </Modal>
+      </Background>
+    </Container>
   );
 }

@@ -1,6 +1,5 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import useIcal from "../../../../hooks/useIcal";
-import useClickOutside from "../../../../hooks/useClickOutside";
 import {ButtonsWrapper, Logo, NavBar, Title} from "./Header.style";
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import GetAppIcon from '@material-ui/icons/GetApp';
@@ -11,12 +10,11 @@ import AnimatedModal from "../../../../components/AnimatedModal";
 import NavButton from "../../../../components/NavButton/NavButton";
 
 export default function ({ events }) {
-  const { downloadIcal } = useIcal();
-  const wrapperRef = useRef(null);
-  const closeModal = () => setDatePickerIsOpen(!datePickerIsOpen);
-  const exportIcal = () => downloadIcal(events);
-  useClickOutside(closeModal);
   const [datePickerIsOpen, setDatePickerIsOpen] = useState(false);
+  const { downloadIcal } = useIcal();
+  const openModal = () => setDatePickerIsOpen(true);
+  const closeModal = () => setDatePickerIsOpen(false);
+  const exportIcal = () => downloadIcal(events);
 
     return (
     <NavBar>
@@ -29,12 +27,14 @@ export default function ({ events }) {
           Icon={GetAppIcon}
         />
         <NavButton
-          onClick={closeModal}
+          onClick={openModal}
           text={'Change date range'}
           Icon={DateRangeIcon}
         />
       </ButtonsWrapper>
-      <AnimatedModal isOpen={datePickerIsOpen}/>
+      <AnimatedModal
+        closeModal={closeModal}
+        isOpen={datePickerIsOpen}/>
     </NavBar>
   );
 }
