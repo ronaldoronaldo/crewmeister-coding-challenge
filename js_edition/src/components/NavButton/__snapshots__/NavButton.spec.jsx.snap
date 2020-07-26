@@ -3,10 +3,10 @@
 exports[`<NavButton /> should match snapshot 1`] = `
 <div>
   <button
-    class="sc-AxirZ sc-AxhCb kYuvxj"
+    class="sc-AxirZ sc-AxhCb kuZsdj"
   >
     <span
-      class="sc-AxjAm sc-AxiKw QVUtw"
+      class="sc-AxjAm sc-AxiKw fHQema"
     >
       myBtn
     </span>

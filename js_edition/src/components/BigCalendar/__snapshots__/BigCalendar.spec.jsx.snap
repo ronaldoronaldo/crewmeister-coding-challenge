@@ -13,26 +13,26 @@ exports[`<BigCalendar /> should match snapshot 1`] = `
         class="sc-Axmtr kOaucV"
       >
         <div
-          class="sc-AxheI kNCKog"
+          class="sc-AxheI dHClQe"
         >
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Today
           </button>
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Back
           </button>
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Next
           </button>
         </div>
         <span
-          class="sc-fzozJi fjaCUm"
+          class="sc-fzozJi drutTT"
         >
           <b>
             January
@@ -41,20 +41,20 @@ exports[`<BigCalendar /> should match snapshot 1`] = `
           2017
         </span>
         <div
-          class="sc-AxheI kNCKog"
+          class="sc-AxheI dHClQe"
         >
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Day
           </button>
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Week
           </button>
           <button
-            class="sc-AxgMl sc-AxmLO MIcGi"
+            class="sc-AxgMl sc-AxmLO cVTsKA"
           >
             Month
           </button>

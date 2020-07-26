@@ -6,26 +6,26 @@ exports[`<Toolbar /> should match snapshot 1`] = `
     class="sc-AxhCb kCcHTH"
   >
     <div
-      class="sc-AxiKw emcivl"
+      class="sc-AxiKw dYKNzP"
     >
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Today
       </button>
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Back
       </button>
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Next
       </button>
     </div>
     <span
-      class="sc-AxgMl gCVfLD"
+      class="sc-AxgMl gESrrq"
     >
       <b>
         July
@@ -34,20 +34,20 @@ exports[`<Toolbar /> should match snapshot 1`] = `
       2020
     </span>
     <div
-      class="sc-AxiKw emcivl"
+      class="sc-AxiKw dYKNzP"
     >
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Day
       </button>
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Week
       </button>
       <button
-        class="sc-AxirZ sc-AxhUy dTzrWs"
+        class="sc-AxirZ sc-AxhUy fTNyKW"
       >
         Month
       </button>
