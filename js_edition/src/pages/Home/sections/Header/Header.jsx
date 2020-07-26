@@ -6,11 +6,13 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import logo from '../../../../assets/images/logo.png'
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
+import AnimatedModal from "../../../../components/AnimatedModal";
 
 export default function ({ events }) {
   const { downloadIcal } = useIcal();
+  const [datePickerIsOpen, setDatePickerIsOpen] = useState(false);
 
-  return (
+    return (
     <NavBar>
       <Logo src={logo}/>
       <Title>Absence Manager</Title>
@@ -23,13 +25,16 @@ export default function ({ events }) {
           <GetAppIcon/>
         </NavButton>
         <NavButton
-          onClick={() => downloadIcal(events)}>
+          onClick={() => setDatePickerIsOpen(!datePickerIsOpen)}>
           <ButtonText>
             Change date range
           </ButtonText>
           <DateRangeIcon/>
         </NavButton>
       </ButtonsWrapper>
+
+      <AnimatedModal isOpen={datePickerIsOpen}/>
+
     </NavBar>
   );
 }
