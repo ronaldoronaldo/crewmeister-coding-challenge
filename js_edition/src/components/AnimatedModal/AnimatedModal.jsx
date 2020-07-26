@@ -1,14 +1,10 @@
-import React, {useRef, useState} from "react";
+import React, {useRef} from "react";
 import {Background, Container, Modal} from "./AnimatedModal.style";
-import {DateRangePicker} from "react-date-range";
 import useClickOutside from "../../hooks/useClickOutside";
 
 export default function AnimatedModal({isOpen, closeModal, children}) {
-
   const wrapperRef = useRef(null);
   useClickOutside(wrapperRef, closeModal);
-
-
 
   return (
     <Container isOpen={isOpen}>

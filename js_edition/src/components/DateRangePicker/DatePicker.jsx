@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import {DateRangePicker} from "react-date-range";
 import {DatePickerButton, DatePickerFooter} from "./DatePicker.style";
 
