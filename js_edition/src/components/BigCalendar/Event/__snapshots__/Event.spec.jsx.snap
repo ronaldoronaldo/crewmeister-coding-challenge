@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Event /> should match snapshot when is on vacation 1`] = `
+<div>
+  <div
+    class="sc-AxjAm iqqVjM"
+  >
+    <span
+      class="sc-AxirZ cOgLMt"
+    >
+      Tom
+    </span>
+    <span
+      class="sc-AxirZ sc-AxiKw iLSsjr"
+    >
+       - 
+      vacation
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Event /> should match snapshot when is sickness 1`] = `
+<div>
+  <div
+    class="sc-AxjAm eAGnuO"
+  >
+    <span
+      class="sc-AxirZ cOgLMt"
+    >
+      Mike
+    </span>
+    <span
+      class="sc-AxirZ sc-AxiKw iLSsjr"
+    >
+       - 
+      sickness
+    </span>
+  </div>
+</div>
+`;

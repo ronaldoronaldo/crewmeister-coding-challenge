@@ -3,73 +3,62 @@
 exports[`<BigCalendar /> should match snapshot 1`] = `
 <div>
   <div
-    class="sc-AxhCb iklaMi"
+    class="sc-AxhCb djqnBx"
   >
     <div
       class="rbc-calendar"
       style="height: 600px;"
     >
       <div
-        class="rbc-toolbar"
+        class="sc-Axmtr kOaucV"
       >
-        <span
-          class="rbc-btn-group"
+        <div
+          class="sc-AxheI kNCKog"
         >
           <button
-            type="button"
+            class="sc-AxgMl sc-AxmLO MIcGi"
           >
             Today
           </button>
           <button
-            type="button"
+            class="sc-AxgMl sc-AxmLO MIcGi"
           >
             Back
           </button>
           <button
-            type="button"
+            class="sc-AxgMl sc-AxmLO MIcGi"
           >
             Next
           </button>
-        </span>
+        </div>
         <span
-          class="rbc-toolbar-label"
+          class="sc-fzozJi fjaCUm"
         >
-          January 2017
+          <b>
+            January
+          </b>
+           
+          2017
         </span>
-        <span
-          class="rbc-btn-group"
+        <div
+          class="sc-AxheI kNCKog"
         >
           <button
-            class="rbc-active"
-            type="button"
-          >
-            Month
-          </button>
-          <button
-            class=""
-            type="button"
-          >
-            Week
-          </button>
-          <button
-            class=""
-            type="button"
-          >
-            Work Week
-          </button>
-          <button
-            class=""
-            type="button"
+            class="sc-AxgMl sc-AxmLO MIcGi"
           >
             Day
           </button>
           <button
-            class=""
-            type="button"
+            class="sc-AxgMl sc-AxmLO MIcGi"
           >
-            Agenda
+            Week
           </button>
-        </span>
+          <button
+            class="sc-AxgMl sc-AxmLO MIcGi"
+          >
+            Month
+          </button>
+        </div>
       </div>
       <div
         class="rbc-month-view"
@@ -233,12 +222,19 @@ exports[`<BigCalendar /> should match snapshot 1`] = `
                 style="flex-basis: 14.285714285714285%; max-width: 14.285714285714285%;"
               >
                 <div
-                  class="sc-AxjAm sc-AxirZ dcPfJT"
+                  class="sc-AxjAm eAGnuO"
                 >
-                  <strong>
-                     
-                     Mike - sickness 
-                  </strong>
+                  <span
+                    class="sc-AxirZ cOgLMt"
+                  >
+                    Mike
+                  </span>
+                  <span
+                    class="sc-AxirZ sc-AxiKw iLSsjr"
+                  >
+                     - 
+                    sickness
+                  </span>
                 </div>
               </div>
               <div
@@ -246,12 +242,19 @@ exports[`<BigCalendar /> should match snapshot 1`] = `
                 style="flex-basis: 28.57142857142857%; max-width: 28.57142857142857%;"
               >
                 <div
-                  class="sc-AxjAm sc-AxiKw hbaPQf"
+                  class="sc-AxjAm iqqVjM"
                 >
-                  <strong>
-                     
-                     Tom - vacation 
-                  </strong>
+                  <span
+                    class="sc-AxirZ cOgLMt"
+                  >
+                    Tom
+                  </span>
+                  <span
+                    class="sc-AxirZ sc-AxiKw iLSsjr"
+                  >
+                     - 
+                    vacation
+                  </span>
                 </div>
               </div>
             </div>
