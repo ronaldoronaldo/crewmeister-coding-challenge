@@ -1,6 +1,6 @@
 import React from "react";
 import useIcal from "../../../../hooks/useIcal";
-import {ButtonsWrapper, IcalDownloadButton, Logo, NavBar, Title} from "./Header.style";
+import {ButtonsWrapper, NavButton, Logo, NavBar, Title, ButtonText} from "./Header.style";
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import logo from '../../../../assets/images/logo.png'
 
@@ -11,8 +11,20 @@ export default function ({ events }) {
       <Logo src={logo}/>
       <Title>Absence Manager</Title>
       <ButtonsWrapper>
-        <IcalDownloadButton onClick={() => downloadIcal(events)}> Download Ical </IcalDownloadButton>
-        <DateRangeIcon/>
+        <NavButton
+          onClick={() => downloadIcal(events)}>
+          <ButtonText>
+            Download Ical
+          </ButtonText>
+        </NavButton>
+        <NavButton
+          onClick={() => downloadIcal(events)}>
+          <ButtonText>
+            Change date range
+          </ButtonText>
+          <DateRangeIcon/>
+        </NavButton>
+
       </ButtonsWrapper>
     </NavBar>
   );

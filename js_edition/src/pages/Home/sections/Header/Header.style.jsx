@@ -11,8 +11,8 @@ export const NavBar = styled.div`
 `
 
 export const Logo = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 64px;
+  height: 64px;
   margin-left: ${spacing.xLarge};
 `
 
@@ -22,19 +22,25 @@ export const Title = styled.span`
   color: ${colors.primaryText};
 `
 
-export const ButtonsWrapper = styled.div`
-  display: flex;
-  margin-right: ${spacing.xLarge};
+export const ButtonText = styled.span`
+  font-size: ${text.paragraph};
+  margin-right: ${spacing.small};
+  color: ${colors.primaryText};
 `
 
-export const IcalDownloadButton = styled.button`
+export const ButtonsWrapper = styled.div`
+  display: flex;
+`
+
+export const NavButton = styled.button`
   display: flex;
   align-items: center;
-  margin-right: ${spacing.large};
+  margin-right: ${spacing.xLarge};
   background-color: transparent;
   border-radius: ${radius};
   border: 1px solid ${colors.gray};
   height: ${button.small};
-  width: 120px;
+  width: auto;
+  padding: 0 ${spacing.medium};
   justify-content: center;
 `
