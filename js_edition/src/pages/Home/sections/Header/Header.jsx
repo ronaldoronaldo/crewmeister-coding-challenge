@@ -2,6 +2,7 @@ import React from "react";
 import useIcal from "../../../../hooks/useIcal";
 import {ButtonsWrapper, NavButton, Logo, NavBar, Title, ButtonText} from "./Header.style";
 import DateRangeIcon from '@material-ui/icons/DateRange';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import logo from '../../../../assets/images/logo.png'
 
 export default function ({ events }) {
@@ -16,6 +17,7 @@ export default function ({ events }) {
           <ButtonText>
             Download Ical
           </ButtonText>
+          <GetAppIcon/>
         </NavButton>
         <NavButton
           onClick={() => downloadIcal(events)}>

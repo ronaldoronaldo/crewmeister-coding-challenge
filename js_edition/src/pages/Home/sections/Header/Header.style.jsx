@@ -43,4 +43,8 @@ export const NavButton = styled.button`
   width: auto;
   padding: 0 ${spacing.medium};
   justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: ${colors.darkWhite};
+  }
 `

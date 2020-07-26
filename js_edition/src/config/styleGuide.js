@@ -1,13 +1,16 @@
 export const colors = {
   primaryText: '#001027',
   secondaryText: '#6b6b78',
-  white: '#ffffff',
   black: '#000000',
+  white: '#ffffff',
+  darkWhite: '#eeeeee',
   lightGray: '#dddddd',
   gray: '#cccccc',
 
   sickness: '#EF6C00',
+  darkSickness: '#EF6C00',
   vacation: '#33B679',
+  darkVacation: '#33B679',
 };
 
 export const fontWeights = {
