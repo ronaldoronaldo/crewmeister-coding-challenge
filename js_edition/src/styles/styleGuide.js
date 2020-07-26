@@ -38,7 +38,7 @@ export const text = {
 
 export const screens = {
   small: '480px',
-  medium: '768px',
+  medium: '812px',
   large: '992px',
   xLarger: '1200px',
   xXLarge: '1400px',

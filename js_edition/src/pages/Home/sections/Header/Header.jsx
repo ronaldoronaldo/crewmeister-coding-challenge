@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import useIcal from "../../../../hooks/useIcal";
-import {ButtonsWrapper, Logo, NavBar, Title} from "./Header.style";
+import {ButtonsWrapper, Logo, LogoContainer, NavBar, Title} from "./Header.style";
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import logo from '../../../../assets/images/logo.png'
@@ -21,15 +21,17 @@ export default function ({ events }) {
     redirectWithDateRange(range)
   }
 
-  const resetDateRange = range => {
+  const resetDateRange = () => {
     setDatePickerIsOpen(false)
     redirect('/')
   }
 
   return (
     <NavBar>
-      <Logo src={logo}/>
-      <Title>Absence Manager</Title>
+      <LogoContainer>
+        <Logo src={logo}/>
+        <Title>Absence Manager</Title>
+      </LogoContainer>
       <ButtonsWrapper>
         <NavButton
           onClick={() => downloadIcal(events)}
